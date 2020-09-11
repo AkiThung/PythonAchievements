@@ -1,0 +1,392 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\akith> md newDirectory?
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:39 PM                newDirectory​
+
+
+PS C:\Users\akith> cd newdirectory
+cd : Cannot find path 'C:\Users\akith\newdirectory' because it does not exist.
+At line:1 char:1
++ cd newdirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\newdirectory:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\akith> cd newDirectory
+cd : Cannot find path 'C:\Users\akith\newDirectory' because it does not exist.
+At line:1 char:1
++ cd newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\newDirectory:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\akith> cd newDirectory?
+PS C:\Users\akith\newDirectory​> rm newDirectory
+rm : Cannot find path 'C:\Users\akith\newDirectory​\newDirectory' because it does not exist.
+At line:1 char:1
++ rm newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\...y​\newDirectory:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\akith\newDirectory​> rm newDirectory?
+PS C:\Users\akith\newDirectory​> rm newDirectory
+rm : Cannot find path 'C:\Users\akith\newDirectory​\newDirectory' because it does not exist.
+At line:1 char:1
++ rm newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\...y​\newDirectory:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\akith\newDirectory​> cd..
+PS C:\Users\akith> rm newDirectory
+rm : Cannot find path 'C:\Users\akith\newDirectory' because it does not exist.
+At line:1 char:1
++ rm newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\newDirectory:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\akith> rm newDirectory?
+PS C:\Users\akith> ls
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/1/2020   2:39 PM                .atom
+d-----         9/1/2020   2:45 PM                .vscode
+d-r---        8/26/2020   5:20 PM                3D Objects
+d-----         8/7/2020   4:58 PM                ansel
+d-r---        8/26/2020   5:20 PM                Contacts
+d-r---         9/7/2020   1:42 PM                Creative Cloud Files
+d-r---         9/6/2020   9:33 PM                Desktop
+d-r---         9/3/2020  11:58 AM                Documents
+d-r---         9/7/2020  10:44 AM                Downloads
+d-r---        8/26/2020   5:20 PM                Favorites
+d-r---        8/26/2020   5:20 PM                Links
+d-r---        8/26/2020   5:20 PM                Music
+dar--l         9/7/2020   1:42 PM                OneDrive
+d-r---         9/1/2020  12:33 PM                Pictures
+d-r---        8/26/2020   5:20 PM                Saved Games
+d-r---        8/26/2020   5:20 PM                Searches
+d-r---         9/7/2020   1:42 PM                Videos
+-a----         9/3/2020  11:49 AM            175 .gitconfig
+
+
+PS C:\Users\akith> md newDirectory
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:44 PM                newDirectory
+
+
+PS C:\Users\akith> cd .\Templates\cd..
+cd : Cannot find path 'C:\Users\akith\Templates\cd..' because it does not exist.
+At line:1 char:1
++ cd .\Templates\cd..
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\Templates\cd..:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\akith> rm newDirectory
+PS C:\Users\akith> ls
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/1/2020   2:39 PM                .atom
+d-----         9/1/2020   2:45 PM                .vscode
+d-r---        8/26/2020   5:20 PM                3D Objects
+d-----         8/7/2020   4:58 PM                ansel
+d-r---        8/26/2020   5:20 PM                Contacts
+d-r---         9/7/2020   1:42 PM                Creative Cloud Files
+d-r---         9/6/2020   9:33 PM                Desktop
+d-r---         9/3/2020  11:58 AM                Documents
+d-r---         9/7/2020  10:44 AM                Downloads
+d-r---        8/26/2020   5:20 PM                Favorites
+d-r---        8/26/2020   5:20 PM                Links
+d-r---        8/26/2020   5:20 PM                Music
+dar--l         9/7/2020   1:42 PM                OneDrive
+d-r---         9/1/2020  12:33 PM                Pictures
+d-r---        8/26/2020   5:20 PM                Saved Games
+d-r---        8/26/2020   5:20 PM                Searches
+d-r---         9/7/2020   1:42 PM                Videos
+-a----         9/3/2020  11:49 AM            175 .gitconfig
+
+
+PS C:\Users\akith> md newDirectory f1m1
+mkdir : A positional parameter cannot be found that accepts argument 'f1m1'.
+At line:1 char:1
++ md newDirectory f1m1
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\akith> md newDirectory
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:52 PM                newDirectory
+
+
+PS C:\Users\akith> mkdir f1m1
+
+
+    Directory: C:\Users\akith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:53 PM                f1m1
+
+
+PS C:\Users\akith> cd .\newDirectory\
+PS C:\Users\akith\newDirectory> mkdir f1m1
+
+
+    Directory: C:\Users\akith\newDirectory
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:54 PM                f1m1
+
+
+PS C:\Users\akith\newDirectory> cd .\f1m1\
+PS C:\Users\akith\newDirectory\f1m1> md newDirectory mkdir beroep
+mkdir : A positional parameter cannot be found that accepts argument 'mkdir'.
+At line:1 char:1
++ md newDirectory mkdir beroep
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\akith\newDirectory\f1m1> md beroep
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:57 PM                beroep
+
+
+PS C:\Users\akith\newDirectory\f1m1> md python
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                python
+
+
+PS C:\Users\akith\newDirectory\f1m1> md pvaardig
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                pvaardig
+
+
+PS C:\Users\akith\newDirectory\f1m1> cd .\pvaardig\
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les01
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les01
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les02
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les02
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les03
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les03
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les04
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les04
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les05
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les05
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les06
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les06
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les07
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les07
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> md les08
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les08
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> ls
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   2:58 PM                les01
+d-----         9/7/2020   2:58 PM                les02
+d-----         9/7/2020   2:58 PM                les03
+d-----         9/7/2020   2:58 PM                les04
+d-----         9/7/2020   2:58 PM                les05
+d-----         9/7/2020   2:58 PM                les06
+d-----         9/7/2020   2:58 PM                les07
+d-----         9/7/2020   2:58 PM                les08
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> cd .\les01\
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> notepad
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> notepad aki
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> notepad aki
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> type aki
+type : Cannot find path 'C:\Users\akith\newDirectory\f1m1\pvaardig\les01\aki' because it does not exist.
+At line:1 char:1
++ type aki
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\...ardig\les01\aki:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> type aki
+type : Cannot find path 'C:\Users\akith\newDirectory\f1m1\pvaardig\les01\aki' because it does not exist.
+At line:1 char:1
++ type aki
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\akith\...ardig\les01\aki:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> type aki.txt
+lolol
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> explorer .
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les01> cd ..
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> explorer .
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> cd..
+PS C:\Users\akith\newDirectory\f1m1> cd .\pvaardig\
+PS C:\Users\akith\newDirectory\f1m1\pvaardig> cd .\les02\
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> md geheim
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   3:09 PM                geheim
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> ls
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   3:09 PM                geheim
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> attrib geheim +h
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> ls
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> attrib geheim -h
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02> ls
+
+
+    Directory: C:\Users\akith\newDirectory\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/7/2020   3:09 PM                geheim
+
+
+PS C:\Users\akith\newDirectory\f1m1\pvaardig\les02>
