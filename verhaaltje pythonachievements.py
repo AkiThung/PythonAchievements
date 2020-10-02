@@ -66,13 +66,13 @@ while a == True:
                time.sleep( 2 )
                antwoord9 = input("jammer de vriend reageert niet, wat doe je nu?\n A magister \n B ik vraag t bij de receptie \n C ik zoek wel \n antwoord:")
                if ( antwoord9 == "A"):
-                        print ("nicee je komt er meteen achter waar je moet zijn, je gaat naar 1.08")
-                        antwoord12 = input("je mag eindelijk naar huis, wat ga je doen \n A Huis \n B naar een vriend \n C naar een feestje \n antwoord:")
-                        if ( antwoord12 == "A"):
-                         print("nicee lekker uitrusten")
-                        elif ( antwoord12 == "B"):
+                      print ("nicee je komt er meteen achter waar je moet zijn, je gaat naar 1.08")
+                      antwoord12 = input("je mag eindelijk naar huis, wat ga je doen \n A Huis \n B naar een vriend \n C naar een feestje \n antwoord:")
+                      if ( antwoord12 == "A"):
+                       print("nicee lekker uitrusten")
+                      elif ( antwoord12 == "B"):
                          print("chill sesies met je vrienden yeet")
-                        elif ( antwoord12 == "C"):
+                      elif ( antwoord12 == "C"):
                          print("gekke fissa, je komt alleen niet op tijd thuis maarja ")
                          time.sleep( 2 )
                elif ( antwoord9 == "B"):
@@ -100,25 +100,4 @@ while a == True:
                          time.sleep( 2 )
      
         
-     antwoord2 = input("je bent op school maar je weer niet waar je moet zijn, hoe ga je erachter komen? \n A magister \n B ik app een vriend \n C ik zoek wel \n antwoord:")
-     if ( antwoord2 == "A"):
-         print("nicee je komt er meteen achter waar je moet zijn, je gaat naar 1.08")
-     elif ( antwoord2 == "B"):
-        time.sleep( 2 )
-        antwoord5 = input("jammer de vriend reageert niet, wat doe je nu?\n A magister \n B ik vraag t bij de receptie \n C ik zoek wel \n antwoord:")
-        if ( antwoord5 == "A"):
-            print ("nicee je komt er meteen achter waar je moet zijn, je gaat naar 1.08")
-        elif ( antwoord5 == "B"):
-            print ("de receptie zget dat je geen les hebt, voor niks op  school gekomen?")
-        elif ( antwoord5 == "C"):
-            print ("je komt erachter dat het lokaal 1.08 is maar je bent wel 10 min te laat")
-     elif ( antwoord2 == "C"):
-        print("je komt erachter dat het lokaal 1.08 is maar je bent wel 10 min te laat")
-     time.sleep( 2 )
-     antwoord3 = input("je mag eindelijk naar huis, wat ga je doen \n A Huis \n B naar een vriend \n C naar een feestje \n antwoord:")
-     if ( antwoord3 == "A"):
-         print("nicee lekker uitrusten")
-     elif ( antwoord3 == "B"):
-        print("chill sesies met je vrienden yeet")
-     elif ( antwoord3 == "C"):
-        print("gekke fissa, je komt alleen niet op tijd thuis maarja ")
+   
